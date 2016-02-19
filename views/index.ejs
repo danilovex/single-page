@@ -1,4 +1,4 @@
-<html>
+<html ng-app="simplePage">
     <head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,8 @@
 
 </head>
 <body>
-TESTE
+    <div ng-view>
+    </div>
 </body>
 
         <!--  Scripts
@@ -19,5 +20,8 @@ TESTE
         -->
         <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
         <script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
+
+        <script type="text/javascript" src="/../js/app.js"></script>
+        <script type="text/javascript" src="/../js/controller-page-one.js"></script>
 
 </html>

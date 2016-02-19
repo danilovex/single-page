@@ -10,8 +10,8 @@ var path = require('path');
 
 
 //load routes
-var customers = require('./routes/customers');
-var api = require('./routes/api');
+//var customers = require('./routes/customers');
+//var api = require('./routes/api');
 
 var app = express();
 
