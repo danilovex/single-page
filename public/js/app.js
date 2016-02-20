@@ -9,7 +9,7 @@ app.config(function($routeProvider, $locationProvider)
 
    // para a rota '/', carregaremos o template home.html e o controller 'HomeCtrl'
    .when('/', {
-      templateUrl : './page/one.ejs',
+      templateUrl : 'page/one',
       controller     : 'OneCtrl',
    })
 

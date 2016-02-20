@@ -37,10 +37,10 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-
+//Links controllers
 app.get('/', routes.index);
-//app.get('/customers/add', customers.add);
-//app.post('/customers/add', customers.save);
+app.get('/page/one', routes.one);
+app.get('/page/three', routes.three);
 
 app.use(app.router);
 
