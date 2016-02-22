@@ -1,6 +1,6 @@
-var app = angular.module('simplePage',['ngRoute']);
+var app = angular.module('simplePage', ['ngRoute', 'ngAnimate', 'toastr']);
 
-app.config(function($routeProvider, $locationProvider)
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider)
 {
    // remove o # da url
    //$locationProvider.html5Mode(true);
@@ -22,4 +22,4 @@ app.config(function($routeProvider, $locationProvider)
    */
    // caso não seja nenhum desses, redirecione para a rota '/'
    .otherwise ({ redirectTo: '/' });
-});
+}]);
