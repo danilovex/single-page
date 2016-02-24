@@ -12,6 +12,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       templateUrl : 'page/one',
       controller     : 'OneCtrl',
    })
+   .when('/four', {
+      templateUrl : 'views/four.html',
+      controller     : 'FourCtrl',
+   })
 
    // para a rota '/sobre', carregaremos o template sobre.html e o controller 'SobreCtrl'
    /*
